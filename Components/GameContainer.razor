@@ -1,0 +1,28 @@
+<div id="game">
+    <header>
+        <div class="menu">
+            <button id="help-button" class="icon" aria-label="help">
+                <game-icon icon="help"></game-icon>
+            </button>
+        </div>
+        <div class="title">
+            WORDLE
+        </div>
+        <div class="menu">
+            <button id="statistics-button" class="icon" aria-label="statistics">
+                <game-icon icon="statistics"></game-icon>
+            </button>
+            <button id="settings-button" class="icon" aria-label="settings">
+                <game-icon icon="settings"></game-icon>
+            </button>
+        </div>
+    </header>
+    <div id="board-container">
+        <div id="board" style="width: 350px;height: 420px;">
+            @for (int i = 0; i < 5; i++)
+            {
+                <GameRow />
+            }
+        </div>
+    </div>
+</div>

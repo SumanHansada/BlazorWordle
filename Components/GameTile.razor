@@ -1,0 +1,16 @@
+<div class="tile" data-state="empty" data-animation="idle" @onkeydown="KeyboardEventHandler"
+    @onkeypress="KeyboardEventHandler" @onkeyup="KeyboardEventHandler">
+</div>
+
+@code {
+    string KeyPressed = "";
+    string EventInfo = "";
+    private void KeyboardEventHandler(KeyboardEventArgs args)
+    {
+        KeyPressed = args.Key;
+        EventInfo = args.Type;
+
+        Console.WriteLine("Key Pressed is " + args.Key);
+        Console.WriteLine("Event Type " + args.Type);
+    }
+}

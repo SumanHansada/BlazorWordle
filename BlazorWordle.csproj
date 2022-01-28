@@ -15,7 +15,7 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <UseSystemResourceKeys>true</UseSystemResourceKeys>
     <PublishTrimmed>true</PublishTrimmed>
-    <TrimMode>copyused</TrimMode>
+    <TrimMode>link</TrimMode>
   </PropertyGroup>
 
   <ItemGroup>

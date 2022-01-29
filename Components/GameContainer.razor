@@ -19,10 +19,14 @@
     </header>
     <div id="board-container">
         <div id="board" style="width: 350px;height: 420px;">
-            @for (int i = 0; i < 5; i++)
+            @for (int i = 0; i < rows; i++)
             {
                 <GameRow />
             }
         </div>
     </div>
 </div>
+
+@code {
+    private int rows = 6;
+}

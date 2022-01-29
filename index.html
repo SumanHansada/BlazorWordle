@@ -12,14 +12,56 @@
     />
     <title>BlazorWordle</title>
     <base href="/BlazorWordle/" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link href="css/loader.css" rel="stylesheet" />
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link href="BlazorWordle.styles.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="app">Loading...</div>
-
+    <div id="app">
+      <div id="loading">
+        <header>
+          Loading
+          <br />
+          Blazor Wordle!
+        </header>
+        <div class="mosaic-loader">
+          <div class="cell d-0"></div>
+          <div class="cell d-1"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-1"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-2"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-6"></div>
+          <div class="cell d-3"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-6"></div>
+          <div class="cell d-7"></div>
+          <div class="cell d-4"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-6"></div>
+          <div class="cell d-7"></div>
+          <div class="cell d-8"></div>
+          <div class="cell d-5"></div>
+          <div class="cell d-6"></div>
+          <div class="cell d-7"></div>
+          <div class="cell d-8"></div>
+          <div class="cell d-9"></div>
+        </div>
+      </div>
+    </div>
     <div id="blazor-error-ui">
       An unhandled error has occurred.
       <a href="/" class="reload">Reload</a>

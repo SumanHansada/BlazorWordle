@@ -1,0 +1,194 @@
+#loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  top: 25%;
+  min-height: 100vh;
+
+  position: relative;
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+header {
+  border-bottom: 1px solid #d3d6da;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+header span {
+  animation: 1s blink infinite;
+}
+header span:nth-child(2n) {
+  animation-delay: 333ms;
+}
+header span:nth-child(3n) {
+  animation-delay: 666ms;
+}
+
+.mosaic-loader {
+  --cell-size: 64px;
+  --cell-spacing: 1px;
+  --border-width: 1px;
+  --rows: 6;
+  --columns: 5;
+  --total-height: calc(
+    var(--rows) * (var(--cell-size) + 2 * var(--cell-spacing))
+  );
+  --total-width: calc(
+    var(--columns) * (var(--cell-size) + 2 * var(--cell-spacing))
+  );
+  display: flex;
+  flex-wrap: wrap;
+  height: var(--total-height);
+  width: var(--total-width);
+  padding-top: 10px;
+}
+.mosaic-loader > .cell {
+  --cell-color: white;
+  flex: 0 0 var(--cell-size);
+  margin: var(--cell-spacing);
+  background-color: transparent;
+  box-sizing: border-box;
+  border: var(--border-width) solid var(--cell-color);
+  animation: 1s ripple ease infinite;
+}
+.mosaic-loader > .cell.d-1 {
+  animation-delay: 50ms;
+}
+.mosaic-loader > .cell.d-2 {
+  animation-delay: 100ms;
+}
+.mosaic-loader > .cell.d-3 {
+  animation-delay: 150ms;
+}
+.mosaic-loader > .cell.d-4 {
+  animation-delay: 200ms;
+}
+.mosaic-loader > .cell.d-5 {
+  animation-delay: 250ms;
+}
+.mosaic-loader > .cell.d-6 {
+  animation-delay: 300ms;
+}
+.mosaic-loader > .cell.d-7 {
+  animation-delay: 350ms;
+}
+.mosaic-loader > .cell.d-8 {
+  animation-delay: 400ms;
+}
+.mosaic-loader > .cell.d-9 {
+  animation-delay: 450ms;
+}
+.mosaic-loader > .cell:nth-child(1) {
+  --cell-color: #538d4e;
+}
+.mosaic-loader > .cell:nth-child(2) {
+  --cell-color: #5a8e4d;
+}
+.mosaic-loader > .cell:nth-child(3) {
+  --cell-color: #61904b;
+}
+.mosaic-loader > .cell:nth-child(4) {
+  --cell-color: #68914a;
+}
+.mosaic-loader > .cell:nth-child(5) {
+  --cell-color: #6f9249;
+}
+.mosaic-loader > .cell:nth-child(6) {
+  --cell-color: #769347;
+}
+.mosaic-loader > .cell:nth-child(7) {
+  --cell-color: #7d9546;
+}
+.mosaic-loader > .cell:nth-child(8) {
+  --cell-color: #849645;
+}
+.mosaic-loader > .cell:nth-child(9) {
+  --cell-color: #8b9743;
+}
+.mosaic-loader > .cell:nth-child(10) {
+  --cell-color: #929942;
+}
+.mosaic-loader > .cell:nth-child(11) {
+  --cell-color: #999a40;
+}
+.mosaic-loader > .cell:nth-child(12) {
+  --cell-color: #a09b3f;
+}
+.mosaic-loader > .cell:nth-child(13) {
+  --cell-color: #a79c3e;
+}
+.mosaic-loader > .cell:nth-child(14) {
+  --cell-color: #ae9e3c;
+}
+.mosaic-loader > .cell:nth-child(15) {
+  --cell-color: #ad9c3c;
+}
+.mosaic-loader > .cell:nth-child(16) {
+  --cell-color: #b19c3b;
+}
+.mosaic-loader > .cell:nth-child(17) {
+  --cell-color: #ac983b;
+}
+.mosaic-loader > .cell:nth-child(18) {
+  --cell-color: #a3913b;
+}
+.mosaic-loader > .cell:nth-child(19) {
+  --cell-color: #9b893b;
+}
+.mosaic-loader > .cell:nth-child(20) {
+  --cell-color: #92823b;
+}
+.mosaic-loader > .cell:nth-child(21) {
+  --cell-color: #897b3b;
+}
+.mosaic-loader > .cell:nth-child(22) {
+  --cell-color: #80743b;
+}
+.mosaic-loader > .cell:nth-child(23) {
+  --cell-color: #786d3c;
+}
+.mosaic-loader > .cell:nth-child(24) {
+  --cell-color: #6f653c;
+}
+.mosaic-loader > .cell:nth-child(25) {
+  --cell-color: #665e3c;
+}
+.mosaic-loader > .cell:nth-child(26) {
+  --cell-color: #5d573c;
+}
+.mosaic-loader > .cell:nth-child(27) {
+  --cell-color: #54503c;
+}
+.mosaic-loader > .cell:nth-child(28) {
+  --cell-color: #4c483c;
+}
+.mosaic-loader > .cell:nth-child(29) {
+  --cell-color: #43413c;
+}
+.mosaic-loader > .cell:nth-child(30) {
+  --cell-color: #3a3a3c;
+}
+@keyframes ripple {
+  0% {
+    background-color: transparent;
+  }
+  30% {
+    background-color: var(--cell-color);
+  }
+  60% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
